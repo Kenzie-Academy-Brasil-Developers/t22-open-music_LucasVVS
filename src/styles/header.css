@@ -61,3 +61,10 @@
   padding: 8px;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+      height: 80px; /* Reduza a altura do cabeçalho em telas menores */
+      padding: 0 20px; /* Adicione um preenchimento interno para espaço */
+  }
+}

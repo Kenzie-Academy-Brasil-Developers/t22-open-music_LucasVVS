@@ -12,10 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   customRange.addEventListener("input", () => {
     const selectedPrice = parseInt(customRange.value);
-    priceValue.innerHTML = `<span class="price-value font-style-2">Até <span class="purple-letter">R$ ${selectedPrice.toLocaleString(
-      "pt-BR",
-      { minimumFractionDigits: 2, maximumFractionDigits: 2 }
-    )}</span>`;
+    priceValue.innerHTML = `<span class="price-value font-style-2">Até <span class="purple-letter">R$ ${selectedPrice}</span></span>`;
     filterAlbumsByPrice(selectedPrice);
   });
 });
