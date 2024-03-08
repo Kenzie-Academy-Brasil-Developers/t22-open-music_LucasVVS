@@ -1,0 +1,51 @@
+.genre-music {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  
+  .genre-filter-item.genre-label {
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 0 2.5rem 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-grey-2);
+  }
+
+  
+  .genre-button {
+    display: inline;
+    margin: 0px 20px 48px 0px;
+    cursor: pointer;
+    background-color: var(--color-grey-6);
+    color: var(--color-grey-3);
+    border-radius: 3px;
+    border: 1px solid transparent; 
+  }
+
+  
+  .genre-button.active {
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+  }
+    
+  .purple-letter {
+    color: var(--color-brand-1);
+  }
+
+  /* dark mode */
+
+  .dark-mode .genre-button {
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+  }
+
+  .dark-mode .genre-button.active {
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-2);
+  }
+
+  .dark-mode .genre-label {
+    color: var(--color-grey-7) ;
+  }

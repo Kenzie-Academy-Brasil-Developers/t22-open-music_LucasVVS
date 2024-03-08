@@ -2,19 +2,90 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Music</title>
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="stylesheet" href="src/styles/albums.css" />
+    <link rel="stylesheet" href="src/styles/genres.css" />
+    <link rel="stylesheet" href="src/styles/price-range.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
-
-    <!-- SCRIPTS  -->
+                      <!-- scripts -->
+    <script type="module" src="src/scripts/index.js"></script>
+                      <!-- scripts -->
   </head>
+
   <body>
-    <header></header>
-    <main></main>
+
+    <header class="header">
+        <div class="open-music-title">
+          <span class="purple-letter">o</span
+          ><span>pen <span class="purple-letter">m</span>usic</span>
+        </div>
+        <div class="header-actions">
+          <button class="button-style-1" id="theme-toggle">
+            <img src="/src/assets/icons/moon-icon.svg" alt="Dark mode icon">
+            <span class="night-button"></span>
+          </button>
+      </div>     
+    </header>
+
+    <section class="genre-music">
+      <div class="genre-filter">
+        <div class="genre-filter-item genre-label">
+          <label class="font-style-2" for="genre">Gênero Musical</label>
+        </div>
+        <div id="genre-buttons" class="genre-buttons-container">
+          <button class="genre-button button-style-1 active" >Todos</button>
+          <button class="genre-button button-style-1" >Pop</button>
+          <button class="genre-button button-style-1" >MPB</button>
+          <button class="genre-button button-style-1" >Forró</button>
+          <button class="genre-button button-style-1" >Samba</button>
+          <button class="genre-button button-style-1" >Baião</button>
+          <button class="genre-button button-style-1" >Rap</button>
+          <button class="genre-button button-style-1" >Hip-Hop</button>
+        </div>
+      </div>
+
+    </section>
+        <div class="price-filter">
+          <label class="font-style-2" for="price">Definir Preço</label>
+        <div class="price-value">
+          <span class="price-value font-style-2">Até <span class="purple-letter">R$ 150</span>
+        </div>
+      </div>
+          <div class="price-slider">
+            <input type="range" id="customRange" min="0" max="150" value="50">
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <div class="search-album">
+          <label class="font-style-2" for="price">Albuns Encontrados</label>
+        </div>
+        <section class="album-grid">
+          <div class="album">
+            <img src="src/assets/img/cover-1.png" alt="Acabou o Chorare" />
+            <h2>Acabou o Chorare</h2>
+            <div class="descript">
+              <div class="descript">
+                <p class="custom-paragraph">Novos Baianos</p>
+                <p class="custom-paragraph">MPB</p>
+                
+              </div>
+            </div>
+            <div class="descript-2">
+              <h6>R$ 137,91</h6>
+              <button>Comprar</button>
+          </div>
+          </div>
+        </section>
+      </main>
+
+      <footer></footer>
   </body>
+
 </html>
