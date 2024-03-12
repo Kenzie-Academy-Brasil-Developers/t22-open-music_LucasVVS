@@ -37,12 +37,12 @@ const toggleTheme = () => {
 const initialTheme = getInitialTheme();
 setTheme(initialTheme);
 
-// Verifica se o navegador já possui uma preferência de tema escuro
+// Verifica se o navegador já possui uma preferência de tema escuro \\ 
 if (prefersDarkScheme.matches) {
   setTheme("dark");
 }
 
-// Adiciona o manipulador de eventos para o botão de alternar tema
+// Adiciona o manipulador de eventos para o botão de alternar tema \\ 
 toggleThemeBtn.addEventListener("click", toggleTheme);
 
 export { toggleTheme, getInitialTheme, setTheme };
