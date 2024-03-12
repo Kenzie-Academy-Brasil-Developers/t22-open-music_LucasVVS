@@ -26,7 +26,7 @@ async function loadAlbums() {
       return;
     }
 
-    // Reorganize a lista de álbuns do maior para o menor preço
+    // Reorganize a lista de álbuns do maior para o menor preço \\
     musicData.sort((a, b) => b.price - a.price);
 
     createAlbumCards(musicData);
@@ -118,12 +118,10 @@ function handleGenreButtonClick() {
 
   genreButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Remove a classe 'active' de todos os botões de gênero
       genreButtons.forEach((btn) => btn.classList.remove("active"));
-      // Adiciona a classe 'active' apenas ao botão clicado
       this.classList.add("active");
 
-      // Mantém o botão de gênero selecionado
+      // Mantém o botão de gênero selecionado \\
       const selectedGenre = this.dataset.genre;
       if (selectedGenre) {
         localStorage.setItem("selectedGenre", selectedGenre);
@@ -131,7 +129,7 @@ function handleGenreButtonClick() {
     });
   });
 
-  // Verifica se há um gênero selecionado armazenado e define o botão correspondente como ativo
+  // Verifica se há um gênero selecionado armazenado e define o botão correspondente como ativo \\
   const storedGenre = localStorage.getItem("selectedGenre");
   if (storedGenre) {
     const selectedButton = document.querySelector(
